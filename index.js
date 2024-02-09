@@ -19,5 +19,8 @@ app.post('/', async (req, res) => {
     res.send(result)
 });
 
+app.get('/', (req, res) => {
+  res.send("Welcome to AngelZamora Translate Backend")
+});
 app.listen(port)
 console.log(`listening on port ${port}`)
